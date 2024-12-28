@@ -1,11 +1,12 @@
 {
     "name": "Voice Form Filler MVP",
-    "version": "0.2.1",
+    "version": "0.2.3",
     "description": "Transcription and GPT-based form filling",
     "manifest_version": 3,
     "permissions": [
       "activeTab",
       "scripting",
+      "audioCapture",
       "tabs"
     ],
     "host_permissions": [

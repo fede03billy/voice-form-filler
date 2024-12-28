@@ -95,6 +95,8 @@ async function startRecording() {
     startBtn.disabled = true;
     stopBtn.disabled = false;
     statusEl.textContent = "Recording...";
+    statusEl.classList.add('recording');
+
   } catch (err) {
     statusEl.textContent = "Error accessing microphone.";
     console.error(err);
@@ -108,5 +110,6 @@ function stopRecording() {
 
     startBtn.disabled = false;
     stopBtn.disabled = true;
+    statusEl.classList.remove('recording');
   }
 }
